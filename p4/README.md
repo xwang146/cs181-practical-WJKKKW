@@ -5,12 +5,19 @@ This document will explain how to run this project in the following steps:
 
 1. Environment setting: please run all the commands under python 3 environment
 
-2. More help on command line: run this command for more information on how to start the script:
+2. Default command:
+```
+python run.py
+```
+This will return all the scores in 400 epoches under the setting of SARSA with no modified epsilon and no gravity inference. The scores will store in the output .npy file as well as printing out in the terminal with average score at each epoch. 
+
+2. More help on command line: 
+run this command for more information on how to start the script:
 ```
 python run.py -h
 ```
 
-3. Run actual algorithm:
+3. Run actual algorithm with parameters:
 ```
 python run.py -m <NAME_OF_METHOD> -e <EPSILON_MODIFIED> -g <GRAVITY_INFERENCE>
 ```
